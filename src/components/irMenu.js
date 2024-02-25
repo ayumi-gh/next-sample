@@ -1,4 +1,5 @@
 import styles from '@/styles/irMenu.module.css'
+import Link from 'next/link'
 
 export default function IRMenu() {
   return (
@@ -8,16 +9,16 @@ export default function IRMenu() {
           <div className={styles.head}>その他のIR情報</div>
           <ul className={styles.col4}>
             <li>
-              <a href="/ir/qa">よくあるご質問</a>
+              <Link href="/ir/qa">よくあるご質問</Link>
             </li>
             <li>
-              <a href="/ir/contact">IRに関するお問い合わせ</a>
+              <Link href="/ir/contact">IRに関するお問い合わせ</Link>
             </li>
             <li>
-              <a href="/ir/electronicPublicNotice">電子公告</a>
+              <Link href="/ir/electronicPublicNotice">電子公告</Link>
             </li>
             <li>
-              <a href="/ir/disclaimer">免責事項</a>
+              <Link href="/ir/disclaimer">免責事項</Link>
             </li>
           </ul>
         </div>

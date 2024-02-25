@@ -1,4 +1,5 @@
 import styles from '@/styles/breadcrumb.module.css'
+import Link from 'next/link'
 
 export default function Breadcrumb() {
   return (
@@ -7,7 +8,7 @@ export default function Breadcrumb() {
         <div class={styles.tyk6rf}>
           <ul>
             <li>
-              <a href="/">Top</a>
+              <Link href="/">Top</Link>
             </li>
             <li>IR</li>
           </ul>

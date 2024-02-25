@@ -1,5 +1,6 @@
 import styles from '@/styles/header.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Header() {
     return (
@@ -7,7 +8,7 @@ export default function Header() {
             <div id="header" className={styles.header}>
                 <header className={styles.inner}>
                     <div className={styles.cover}>
-                        <a className={styles.logo} href="/">
+                        <Link className={styles.logo} href="/">
                         <div>
                             <span
                                 style={{
@@ -77,26 +78,26 @@ export default function Header() {
                             />
                             </span>
                         </div>
-                        </a>
+                        </Link>
                         <div className={styles.nav}>
                             <ul className={styles.nav_list}>
                                 <li>
-                                <a href="/company" className={styles.nav_list_item}>COVERについて</a>
+                                <Link href="/company" className={styles.nav_list_item}>COVERについて</Link>
                                 </li>
                                 <li>
-                                <a href="/business" className={styles.nav_list_item}>事業</a>
+                                <Link href="/business" className={styles.nav_list_item}>事業</Link>
                                 </li>
                                 <li>
-                                <a href="/news" className={styles.nav_list_item}>ニュース</a>
+                                <Link href="/news" className={styles.nav_list_item}>ニュース</Link>
                                 </li>
                                 <li>
-                                <a href="/recruit" className={styles.nav_list_item}>採用</a>
+                                <Link href="/recruit" className={styles.nav_list_item}>採用</Link>
                                 </li>
                                 <li>
-                                <a href="/ir" className={styles.nav_list_item}>IR</a>
+                                <Link href="/ir" className={styles.nav_list_item}>IR</Link>
                                 </li>
                                 <li>
-                                <a href="/promotion" className={styles.nav_list_item}>プロモーション</a>
+                                <Link href="/promotion" className={styles.nav_list_item}>プロモーション</Link>
                                 </li>
                             </ul>
                             <form className={`${styles['is-header']} ${styles.lang}`}>
@@ -274,49 +275,46 @@ export default function Header() {
                             <nav className="css-0">
                                 <ul className="css-1fy9q5g">
                                 <li>
-                                    <a href="/" className="css-16bgvvg">Top</a>
+                                    <Link href="/" className="css-16bgvvg">Top</Link>
                                 </li>
                                 <li>
-                                    <a href="/company" className="css-16bgvvg">COVERについて</a>
+                                    <Link href="/company" className="css-16bgvvg">COVERについて</Link>
                                 </li>
                                 <li>
                                     <div className="css-1nlw5g9">
                                     <button className="spTabShow css-1261alx">事業</button>
                                     <div className="spTabHidden">
-                                        <a href="/business" className="css-1261alx">事業</a>
+                                        <Link href="/business" className="css-1261alx">事業</Link>
                                     </div>
                                     <div className="css-1lsdr4b">
                                         <ul className="css-1xbpr7c">
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a href="/business" className="css-ql939o">
+                                            <Link href="/business" className="css-ql939o">
                                                 <span>事業TOP</span>
-                                            </a>
+                                            </Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a href="/business/vtuber" className="css-ql939o"
-                                                >VTuberプロダクション運営</a
-                                            >
+                                            <Link href="/business/vtuber" className="css-ql939o"
+                                                >VTuberプロダクション運営</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a
+                                            <Link
                                                 href="/business/mediamix"
                                                 className="css-ql939o"
-                                                >メディアミックス</a
-                                            >
+                                                >メディアミックス</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a
+                                            <Link
                                                 href="/business/metaverse"
                                                 className="css-ql939o"
-                                                >メタバース</a
-                                            >
+                                                >メタバース</Link>
                                             </div>
                                         </li>
                                         </ul>
@@ -324,47 +322,44 @@ export default function Header() {
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="/news" className="css-16bgvvg">ニュース</a>
+                                    <Link href="/news" className="css-16bgvvg">ニュース</Link>
                                 </li>
                                 <li>
                                     <div className="css-1nlw5g9">
                                     <button className="spTabShow css-1261alx">採用</button>
                                     <div className="spTabHidden">
-                                        <a href="/recruit" className="css-1261alx">採用</a>
+                                        <Link href="/recruit" className="css-1261alx">採用</Link>
                                     </div>
                                     <div className="css-1lsdr4b">
                                         <ul className="css-1xbpr7c">
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a href="/recruit" className="css-ql939o">
+                                            <Link href="/recruit" className="css-ql939o">
                                                 <span>採用TOP</span>
-                                            </a>
+                                            </Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a
+                                            <Link
                                                 target="_blank"
                                                 href="/recruit/newgraduate"
                                                 className="css-1515rhh"
-                                                >新卒・インターン</a
-                                            >
+                                                >新卒・インターン</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a href="/recruit/career" className="css-ql939o"
-                                                >キャリア採用</a
-                                            >
+                                            <Link href="/recruit/career" className="css-ql939o"
+                                                >キャリア採用</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a
+                                            <Link
                                                 href="/recruit/workstyle"
                                                 className="css-ql939o"
-                                                >はたらく環境</a
-                                            >
+                                                >はたらく環境</Link>
                                             </div>
                                         </li>
                                         </ul>
@@ -375,98 +370,87 @@ export default function Header() {
                                     <div className="css-1nlw5g9">
                                     <button className="spTabShow css-1261alx">IR</button>
                                     <div className="spTabHidden">
-                                        <a href="/ir" className="css-1261alx">IR</a>
+                                        <Link href="/ir" className="css-1261alx">IR</Link>
                                     </div>
                                     <div className="css-1lsdr4b">
                                         <ul className="css-1xbpr7c">
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a href="/ir" className="css-ql939o">
+                                            <Link href="/ir" className="css-ql939o">
                                                 <span>IRトップ</span>
-                                            </a>
+                                            </Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a href="/ir/topMessage" className="css-ql939o"
-                                                >トップメッセージ</a
-                                            >
+                                            <Link href="/ir/topMessage" className="css-ql939o"
+                                                >トップメッセージ</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a
+                                            <Link
                                                 href="/ir/corporateGovernance"
                                                 className="css-ql939o"
-                                                >コーポレート・ガバナンス</a
-                                            >
+                                                >コーポレート・ガバナンス</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a href="/ir/news" className="css-ql939o"
-                                                >IRニュース</a
-                                            >
+                                            <Link href="/ir/news" className="css-ql939o"
+                                                >IRニュース</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a href="/ir/calendar" className="css-ql939o"
-                                                >IRカレンダー</a
-                                            >
+                                            <Link href="/ir/calendar" className="css-ql939o"
+                                                >IRカレンダー</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a href="/ir/policy" className="css-ql939o"
-                                                >ディスクロージャーポリシー</a
-                                            >
+                                            <Link href="/ir/policy" className="css-ql939o"
+                                                >ディスクロージャーポリシー</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a href="/ir/library" className="css-ql939o"
-                                                >IRライブラリー</a
-                                            >
+                                            <Link href="/ir/library" className="css-ql939o"
+                                                >IRライブラリー</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a href="/ir/highlights" className="css-ql939o"
-                                                >業績ハイライト</a
-                                            >
+                                            <Link href="/ir/highlights" className="css-ql939o"
+                                                >業績ハイライト</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a
+                                            <Link
                                                 href="/ir/stockInformation"
                                                 className="css-ql939o"
-                                                >株式情報</a
-                                            >
+                                                >株式情報</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a href="/ir/qa" className="css-ql939o"
-                                                >よくあるご質問</a
-                                            >
+                                            <Link href="/ir/qa" className="css-ql939o"
+                                                >よくあるご質問</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a
+                                            <Link
                                                 href="/ir/electronicPublicNotice"
                                                 className="css-ql939o"
-                                                >電子公告</a
-                                            >
+                                                >電子公告</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="css-92r0zk">
-                                            <a href="/ir/disclaimer" className="css-ql939o"
-                                                >免責事項</a
-                                            >
+                                            <Link href="/ir/disclaimer" className="css-ql939o"
+                                                >免責事項</Link>
                                             </div>
                                         </li>
                                         </ul>
@@ -474,28 +458,25 @@ export default function Header() {
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="/promotion" className="css-16bgvvg"
-                                    >プロモーション</a
-                                    >
+                                    <Link href="/promotion" className="css-16bgvvg"
+                                    >プロモーション</Link>
                                 </li>
                                 <li>
-                                    <a href="/recruit/future" className="css-16bgvvg"
-                                    >私たちの未来展望</a
-                                    >
+                                    <Link href="/recruit/future" className="css-16bgvvg"
+                                    >私たちの未来展望</Link>
                                 </li>
                                 </ul>
                             </nav>
                             </div>
                             <div className="css-11duffp">
-                            <a href="/contact" className="css-11ft2dh">お問い合わせ</a>
-                            <a href="/privacy" className="css-11ft2dh"
-                                >プライバシーポリシー</a
-                            >
+                            <Link href="/contact" className="css-11ft2dh">お問い合わせ</Link>
+                            <Link href="/privacy" className="css-11ft2dh"
+                                >プライバシーポリシー</Link>
                             </div>
                         </div>
                         </div>
                         <div className="footer css-1e6v6yg">
-                        <a className="css-217f3m">
+                        <Link className="css-217f3m" href="/">
                             <span
                                 style={{
                                     boxSizing: 'border-box',
@@ -563,7 +544,7 @@ export default function Header() {
                                 }}
                             />
                             </span>
-                        </a>
+                        </Link>
                         <form className="is-header lang">
                             <fieldset className="fieldset">
                             <div className={styles.fdset_jpen}>

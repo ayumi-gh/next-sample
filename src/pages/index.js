@@ -7,7 +7,7 @@ import IRMenu from "@/components/irMenu";
 import IRPanel from "@/components/irPanel";
 import utils from '@/styles/utils.module.css';
 import Image from 'next/image';
-
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -25,10 +25,10 @@ export default function Home() {
           </div>
           <div class="css-0">
             <ul id="xj-mainlist" class="css-0 xj-list xj-list__irnews">
-              <li class="css-mqnptn xj-list__col"><a href="https://finance.logmi.jp/articles/379146" target="_blank" class="css-1n4410e"><time datetime="2024.02.29" class="css-1rcpqza xj-list__date">2024.02.29</time><span class="css-8hukbe xj-list__label icon_ir">IR資料</span><div class="css-1wufuga xj-list__title"><p>2024年３月期 第３四半期 決算説明会 書き起こし（ログミーファイナンス掲載）<span class="xj-list__icon-blank"></span></p></div></a></li>
-              <li class="css-mqnptn xj-list__col"><a href="https://contents.xj-storage.jp/xcontents/AS05169/1a2b7582/f1a7/4231/a767/1d038c4a1081/S100SSHV.pdf" target="_blank" class="css-1n4410e"><time datetime="2024.02.08" class="css-1rcpqza xj-list__date">2024.02.08</time><span class="css-8hukbe xj-list__label icon_legal">有報</span><div class="css-1wufuga xj-list__title"><p>四半期報告書－第8期第3四半期(2023/10/01－2023/12/31)<span class="xj-list__icon-pdf">（94KB）</span></p></div></a></li>
-              <li class="css-mqnptn xj-list__col"><a href="https://contents.xj-storage.jp/xcontents/AS05169/a4730530/c503/496f/b429/ceb21d6412c7/140120240208530150.pdf" target="_blank" class="css-1n4410e"><time datetime="2024.02.08" class="css-1rcpqza xj-list__date">2024.02.08</time><span class="css-8hukbe xj-list__label icon_result">決算</span><div class="css-1wufuga xj-list__title"><p>2024年３月期 第３四半期決算短信〔日本基準〕（非連結）<span class="xj-list__icon-pdf">（224KB）</span></p></div></a></li>
-              <li class="css-mqnptn xj-list__col"><a href="https://contents.xj-storage.jp/xcontents/AS05169/5fa27c47/40da/4d42/890e/c5502988e1c4/140120240208530198.pdf" target="_blank" class="css-1n4410e"><time datetime="2024.02.08" class="css-1rcpqza xj-list__date">2024.02.08</time><span class="css-8hukbe xj-list__label icon_discro">適時開示</span><div class="css-1wufuga xj-list__title"><p>通期業績予想の修正に関するお知らせ<span class="xj-list__icon-pdf">（254KB）</span></p></div></a></li>
+              <li class="css-mqnptn xj-list__col"><Link href="https://finance.logmi.jp/articles/379146" target="_blank" class="css-1n4410e"><time datetime="2024.02.29" class="css-1rcpqza xj-list__date">2024.02.29</time><span class="css-8hukbe xj-list__label icon_ir">IR資料</span><div class="css-1wufuga xj-list__title"><p>2024年３月期 第３四半期 決算説明会 書き起こし（ログミーファイナンス掲載）<span class="xj-list__icon-blank"></span></p></div></Link></li>
+              <li class="css-mqnptn xj-list__col"><Link href="https://contents.xj-storage.jp/xcontents/AS05169/1a2b7582/f1a7/4231/a767/1d038c4a1081/S100SSHV.pdf" target="_blank" class="css-1n4410e"><time datetime="2024.02.08" class="css-1rcpqza xj-list__date">2024.02.08</time><span class="css-8hukbe xj-list__label icon_legal">有報</span><div class="css-1wufuga xj-list__title"><p>四半期報告書－第8期第3四半期(2023/10/01－2023/12/31)<span class="xj-list__icon-pdf">（94KB）</span></p></div></Link></li>
+              <li class="css-mqnptn xj-list__col"><Link href="https://contents.xj-storage.jp/xcontents/AS05169/a4730530/c503/496f/b429/ceb21d6412c7/140120240208530150.pdf" target="_blank" class="css-1n4410e"><time datetime="2024.02.08" class="css-1rcpqza xj-list__date">2024.02.08</time><span class="css-8hukbe xj-list__label icon_result">決算</span><div class="css-1wufuga xj-list__title"><p>2024年３月期 第３四半期決算短信〔日本基準〕（非連結）<span class="xj-list__icon-pdf">（224KB）</span></p></div></Link></li>
+              <li class="css-mqnptn xj-list__col"><Link href="https://contents.xj-storage.jp/xcontents/AS05169/5fa27c47/40da/4d42/890e/c5502988e1c4/140120240208530198.pdf" target="_blank" class="css-1n4410e"><time datetime="2024.02.08" class="css-1rcpqza xj-list__date">2024.02.08</time><span class="css-8hukbe xj-list__label icon_discro">適時開示</span><div class="css-1wufuga xj-list__title"><p>通期業績予想の修正に関するお知らせ<span class="xj-list__icon-pdf">（254KB）</span></p></div></Link></li>
             </ul>
           </div>
           <IRPanel />

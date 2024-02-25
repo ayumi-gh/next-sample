@@ -1,12 +1,13 @@
 import styles from '@/styles/footer.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Footer() {
     return (
         <>
             <footer className={styles.footer}>
                 <div className={styles.bjn8wh}>
-                <a href="/" className={styles.logo}>
+                <Link href="/" className={styles.logo}>
                     <span
                     style={{
                         boxSizing: 'border-box',
@@ -103,108 +104,104 @@ export default function Footer() {
                         />
                     </noscript>
                     </span>
-                </a>
+                </Link>
                 <div className={styles.xhkkcn}>
                     <div className={styles.menu}>
                     <nav>
                         <ul className={styles.nav}>
                             <li className={styles.pcHidden}>
-                                <a href="/" className={styles.bzknke}>トップ</a>
+                                <Link href="/" className={styles.bzknke}>トップ</Link>
                             </li>
                             <li>
-                                <a href="/company" className={styles.bzknke}>COVERについて</a>
+                                <Link href="/company" className={styles.bzknke}>COVERについて</Link>
                             </li>
                             <li>
-                                <a href="/business" className={styles.bzknke}>事業</a>
+                                <Link href="/business" className={styles.bzknke}>事業</Link>
                             </li>
                             <li>
-                                <a href="/news" className={styles.bzknke}>ニュース</a>
+                                <Link href="/news" className={styles.bzknke}>ニュース</Link>
                             </li>
                             <li>
-                                <a href="/recruit" className={styles.bzknke}>採用</a>
+                                <Link href="/recruit" className={styles.bzknke}>採用</Link>
                             </li>
                             <li>
-                                <a href="/ir" className={styles.bzknke}>IR</a>
+                                <Link href="/ir" className={styles.bzknke}>IR</Link>
                             </li>
                             <li>
-                                <a href="/promotion" className={styles.bzknke}>プロモーション</a>
+                                <Link href="/promotion" className={styles.bzknke}>プロモーション</Link>
                             </li>
                         </ul>
                     </nav>
                     <div className={styles.menu_sub}>
                         <div className={styles.m0fzyp}>
                         <div>
-                            <a href="/recruit/future" className={styles.iw6pan}>私たちの未来展望</a>
+                            <Link href="/recruit/future" className={styles.iw6pan}>私たちの未来展望</Link>
                         </div>
                         <div>
-                            <a className={`spHidden ${styles.contact}`} href="/contact">お問い合わせ</a>
+                            <Link className={`spHidden ${styles.contact}`} href="/contact">お問い合わせ</Link>
                         </div>
                         </div>
-                        <a className={`pcHidden ${styles.contact}`} href="/contact">お問い合わせ</a>
+                        <Link className={`pcHidden ${styles.contact}`} href="/contact">お問い合わせ</Link>
                     </div>
                     </div>
                     <div className={styles.mqnaq6}>
                     <nav>
                         <ul className={styles.nmoko4}>
                         <li>
-                            <a
+                            <Link
                             href="https://hololivepro.com/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            >ホロライブプロダクション公式サイト</a>
+                            >ホロライブプロダクション公式サイト</Link>
                         </li>
                         <li>
-                            <a
+                            <Link
                             href="https://hololive.hololivepro.com/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            >hololive（ホロライブ）公式サイト</a
-                            >
+                            >hololive（ホロライブ）公式サイト</Link>
                         </li>
                         <li>
-                            <a
+                            <Link
                             href="https://holostars.hololivepro.com/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            >HOLOSTARS（ホロスターズ）公式サイト</a
-                            >
+                            >HOLOSTARS（ホロスターズ）公式サイト</Link>
                         </li>
                         <li>
-                            <a
+                            <Link
                             href="https://alt.hololive.tv/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            >ホロライブ・オルタナティブ</a
-                            >
+                            >ホロライブ・オルタナティブ</Link>
                         </li>
                         <li>
-                            <a
+                            <Link
                             href="https://holoearth.com/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            >ホロアース 公式サイト</a
-                            >
+                            >ホロアース 公式サイト</Link>
                         </li>
                         </ul>
                         <ul className={styles.a13hdp5x}>
                         <li>
-                            <a href="/privacy">プライバシーポリシー</a>
+                            <Link href="/privacy">プライバシーポリシー</Link>
                         </li>
                         <li>
-                            <a
+                            <Link
                             href="https://hololivepro.com/terms/"
                             className="-hasIcon"
                             target="_blank"
                             rel="noopener noreferrer"
-                            >二次創作ガイドライン</a>
+                            >二次創作ガイドライン</Link>
                         </li>
                         <li>
-                            <a
+                            <Link
                             href="https://hololivepro.com/request-to-minors/"
                             className="-hasIcon"
                             target="_blank"
                             rel="noopener noreferrer"
-                            >未成年の方々へのお願い</a>
+                            >未成年の方々へのお願い</Link>
                         </li>
                         </ul>
                     </nav>
@@ -237,7 +234,7 @@ export default function Footer() {
                                 </fieldset>
                             </form>
                             <div className={styles.r2ksbu}>
-                                <a
+                                <Link
                                 href="https://twitter.com/cover_corp"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -321,8 +318,8 @@ export default function Footer() {
                                     />
                                     </span>
                                 </span>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                 href="https://jp.linkedin.com/company/cover-corp"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -405,7 +402,7 @@ export default function Footer() {
                                     />
                                     </span>
                                 </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <p className={styles.ad3wfl}>© 2016 COVER Corp.</p>

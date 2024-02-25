@@ -1,12 +1,13 @@
 import styles from '@/styles/irPanel.module.css'
 import Image from 'next/image';
+import Link from 'next/link'
 
 export default function IRPanel() {
   return (
     <>
           <ul className={styles.list}>
             <li>
-              <a className={styles.item}>
+              <Link className={styles.item} href="/">
                 <div className={styles.item_image}>
                   <span
                     style={{
@@ -70,10 +71,10 @@ export default function IRPanel() {
                 <p class={`listHeading ${styles.item_title}`}>
                   <span>トップメッセージ</span>
                 </p>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles.item}>
+              <Link className={styles.item} href="/">
                 <div className={styles.item_image}>
                   <span
                     style={{
@@ -137,10 +138,10 @@ export default function IRPanel() {
                 <p class={`listHeading ${styles.item_title}`}>
                   <span>IRライブラリー</span>
                 </p>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles.item}>
+              <Link className={styles.item} href="/">
                 <div className={styles.item_image}>
                   <span
                     style={{
@@ -204,10 +205,10 @@ export default function IRPanel() {
                 <p class={`listHeading ${styles.item_title}`}>
                   <span>業績ハイライト</span>
                 </p>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles.item}>
+              <Link className={styles.item} href="/">
                 <div className={styles.item_image}>
                   <span
                     style={{
@@ -271,10 +272,10 @@ export default function IRPanel() {
                 <p class={`listHeading ${styles.item_title}`}>
                   <span>株式情報</span>
                 </p>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles.item}>
+              <Link className={styles.item} href="/">
                 <div className={styles.item_image}>
                   <span
                     style={{
@@ -338,10 +339,10 @@ export default function IRPanel() {
                 <p class={`listHeading ${styles.item_title}`}>
                   <span>ディスクロージャーポリシー</span>
                 </p>
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={styles.item}>
+              <Link className={styles.item} href="/">
                 <div className={styles.item_image}>
                   <span
                     style={{
@@ -405,7 +406,7 @@ export default function IRPanel() {
                 <p class={`listHeading ${styles.item_title}`}>
                   <span>コーポレート・ガバナンス</span>
                 </p>
-              </a>
+              </Link>
             </li>
           </ul>
     </>

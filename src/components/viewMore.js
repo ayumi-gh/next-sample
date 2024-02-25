@@ -1,10 +1,11 @@
 import styles from '@/styles/viewMore.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function ViewMore({ url }) {
   return (
     <>
-        <a className={styles.link} href={url}>
+        <Link className={styles.link} href={url}>
         <span className={`text ${styles.text}`}>View More</span>
         <span className={`is-sm is-mlSm ${styles.icon}`}>
             <span
@@ -55,7 +56,7 @@ export default function ViewMore({ url }) {
             />
             </span>
         </span>
-        </a>
+        </Link>
     </>
   )
 }
