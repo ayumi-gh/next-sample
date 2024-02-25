@@ -1,0 +1,73 @@
+/* 両端揃え */
+.spaceBetween {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.spaceBetween .heading {
+    margin-bottom: 0;
+}
+
+.spaceBetween .is-hidden {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .spaceBetween {
+    margin-bottom: 48px;
+    }
+
+    .spaceBetween.is-mbsm {
+    margin-bottom: 24px;
+    }
+}
+
+/* その他調整 */
+@media (min-width: 768px) {
+    .ftwb0b {
+    margin-top: -38px;
+    }
+}
+
+.cf5vac {
+margin-top: 64px;
+margin-bottom: 66px;
+}
+
+@media (min-width: 768px) {
+.cf5vac {
+    margin-top: 150px;
+    margin-bottom: 216px;
+}
+}
+
+.r4a87y {
+    overflow: auto;
+    text-align: center;
+}
+
+.r4a87y img {
+    width: auto;
+    height: 360px;
+}
+
+@media (min-width: 768px) {
+    .r4a87y img {
+    overflow: hidden;
+    display: block;
+    border-radius: 32px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    }
+}
